@@ -5,12 +5,17 @@ import { COLORS } from '../constants/theme';
 export default function ExploreScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Explore Screen</Text>
+      <Text style={styles.text}>Explore Media</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: COLORS.background, justifyContent: 'center', alignItems: 'center' },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   text: { color: COLORS.text, fontSize: 18 },
 });

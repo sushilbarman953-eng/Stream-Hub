@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { COLORS, SPACING } from '../constants/theme';
+import { COLORS } from '../constants/theme';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>StreamHub</Text>
-      <Text style={styles.subtitle}>Phase 1 Foundation Active</Text>
+      <Text style={styles.subtitle}>Welcome to StreamHub</Text>
     </View>
   );
 }
@@ -17,16 +17,15 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.background,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: SPACING.md,
   },
   title: {
     color: COLORS.primary,
-    fontSize: 26,
+    fontSize: 28,
     fontWeight: 'bold',
   },
   subtitle: {
     color: COLORS.textSecondary,
     fontSize: 14,
-    marginTop: SPACING.sm,
+    marginTop: 8,
   },
 });

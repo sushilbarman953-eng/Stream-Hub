@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, StatusBar, SafeAreaView } from 'react-native';
+import { View, StyleSheet, StatusBar } from 'react-native';
 import RootNavigator from './src/navigation/RootNavigator';
 import { WatchlistProvider } from './src/context/WatchlistContext';
 import { HistoryProvider } from './src/context/HistoryContext';
@@ -7,19 +7,19 @@ import { COLORS } from './src/constants/theme';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <View style={styles.root}>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.background} />
       <WatchlistProvider>
         <HistoryProvider>
           <RootNavigator />
         </HistoryProvider>
       </WatchlistProvider>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
+  root: {
     flex: 1,
     backgroundColor: COLORS.background,
   },
